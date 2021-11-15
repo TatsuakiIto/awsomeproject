@@ -30,7 +30,6 @@ func main() {
 		buyNumberList = append(buyNumberList, buyNumberSlice)
 	}
 
-	// 配列ぶん回して
 	for _, bn := range buyNumberList {
 		winningCount := 0
 		for _, b := range bn {
