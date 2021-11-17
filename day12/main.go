@@ -43,15 +43,11 @@ func main() {
 func AddingToPoint(paid int, dayStr string, point int) int {
 	switch  {
 		case strings.Contains(dayStr, "3"):
-			oncePoint := float64(paid) * 0.03
-			point += int(oncePoint)
+			point += int(float64(paid) * 0.03)
 		case strings.Contains(dayStr, "5"):
-			oncePoint := float64(paid) * 0.05
-			point += int(oncePoint)
+			point += int(float64(paid) * 0.05)
 		default:
-			oncePoint := float64(paid) * 0.01
-			point += int(oncePoint)
+			point += int(float64(paid) * 0.01)
 	}
-
 	return point
 }
